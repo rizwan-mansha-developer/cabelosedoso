@@ -1,4 +1,7 @@
-import imgage from "./src/assets/HeroAssets/MobileImg.png";
+import imgageMobile from "./src/assets/HeroAssets/MobileImg.png";
+import imgageTablet from "./src/assets/HeroAssets/TabImg.png";
+import imgageDesktop from "./src/assets/HeroAssets/HeroImage.png";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,9 +12,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-mobile": "url('./src/assets/HeroAssets/MobileImg.png')",
-        "hero-tablet": "url('./src/assets/HeroAssets/TabImg.png')",
-        "hero-desktop": "url('./src/assets/HeroAssets/HeroImage.png')",
+        "hero-mobile": `url(${imgageMobile})`,
+        "hero-tablet": `url(${imgageTablet})`,
+        "hero-desktop": `url(${imgageDesktop})`,
       },
 
       screens: {
