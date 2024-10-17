@@ -1,4 +1,4 @@
-import BgImage from "../../../../src/assets/OurServices/BgImage.png";
+import BgTabDesk from "../../../../src/assets/OurServices/BgTabDesk.png";
 import Est from "../../../../src/assets/OurServices/Est.png";
 import Col from "../../../../src/assets/OurServices/Col.png";
 import Cor from "../../../../src/assets/OurServices/Cor.png";
@@ -13,92 +13,140 @@ export default function OurServices() {
   const services = [
     {
       image: Cui,
-      title: "VENDA DE CABELO NATURAL",
+      title: "CUIDADOS COM CABELO NATURAL",
       description:
-        "Transforme o seu visual com extensões luxuosas e perucas feitas à medida e aplicadas no Paraíso das Princesa. Explore a nossa coleção, disponíveis em diversas texturas e cores para combinar com o seu estilo único",
+        "Celebre a beleza do seu cabelo natural com cuidados direcionados e personalizados no Paraíso das Princesas. Os nossos serviços de cuidados com cabelo natural destinam-se a indivíduos que procuram realçar e manter a textura única do seu cabelo.",
     },
-    {
-      image: Est,
-      title: "EXTENSÕES COM CABELO NATURAL",
-      description:
-        "Aumente o comprimento e volume do seu cabelo com as nossas extensões de cabelo natural de alta qualidade",
-    },
+
     {
       image: Tra,
       title: "TRANÇAS",
       description:
-        "Experimente diferentes estilos de tranças, desde as clássicas às mais modernas",
+        "Eleve o seu visual com tranças habilmente criadas no Paraíso das Princesas. Quer esteja à procura de um novo visual audacioso ou de um estilo protetor para manter o seu cabelo natural, os nossos serviços de tranças oferecem tanto estilo como praticidade.",
     },
+
     {
       image: Cor,
-      title: "CORTE E TRATAMENTO",
+      title: "CORTE E MODELISMO",
       description:
-        "Cuide do seu cabelo com os nossos serviços de corte profissional e tratamentos revitalizantes",
+        "Descubra o corte de cabelo perfeito para o seu estilo e personalidade com nossos estilistas especialistas. Do clássico ao contemporâneo, criamos looks sob medida que amplificam sua beleza natural.",
     },
+
     {
       image: Col,
       title: "COLORAÇÃO",
       description:
-        "Dê vida ao seu cabelo com as nossas opções de coloração, desde tons naturais a cores vibrantes",
+        "Transforme o seu cabelo com a nossa coloração especializada. Desde destaques subtis a tons audaciosos, os nossos coloristas dão vida à sua visão. Quer procure um look natural ou uma mudança dramática, confie em nós para resultados impecáveis.",
     },
     {
-      image: Cui,
-      title: "CUIDADOS COM CABELO NATURAL",
+      image: Est,
+      title: "ESTÉTICA E BEM-ESTAR",
       description:
         "Celebre a beleza do seu cabelo natural com cuidados direcionados e personalizados no Paraíso das Princesas. Os nossos serviços de cuidados com cabelo natural destinam-se a indivíduos que procuram realçar e manter a textura única do seu cabelo.",
     },
   ];
 
   return (
-    <div className=" bg-white text-black min-h-screen pt-[280px]">
-      <h1 className="text-3xl font-semibold p-6 text-center md:text-left border-l border-[#FAF6F2]">
+    <div className=" bg-white text-black min-h-screen ">
+      <h1 className="text-[#494040] text-[32px] font-semibold pt-[80px] text-center md:text-left border-l border-[#FAF6F2]">
         OUR SERVICES
       </h1>
 
-      <div className=" md:flex md:flex-col">
+      <div className=" md:flex md:flex-col ">
         {/* Main feature - always visible */}
-        <div className="w-full relative ">
+        <div className="w-full relative sm:px-[30px] ">
           <img
-            src={BgImage}
+            src={BgTabDesk}
             alt="Woman with blonde hair"
-            className="hidden sm:block relative rounded-lg min-h-[592px] w-full object-fill z-0"
+            className="hidden sm:block  relative rounded-lg min-h-[592px] w-full object-fill z-0"
           />
+          {/* sm < bgMobile */}
           <img
             src={BgMobile}
             alt="Woman with blonde hair"
             className="block sm:hidden relative rounded-lg min-h-[592px] w-full object-fill z-0"
           />
 
-          <div className="absolute bottom-[12%] md:w-1/2 md:min-h-full md:bottom-[1%]  z-10 bg-[#1e1e1e]/40 backdrop-blur-sm  text-white gap-y-[32px] rounded-b-lg">
-            <h2 className="text-2xl font-normal  pt-[28px] leading-7 font-cormorant  px-[24px]">
-              {services[0].title}
-            </h2>
-            <p className=" mt-2 font-mulish  font-light px-[24px] pb-[40px] leading-normal ">
-              {services[0].description}
-            </p>
+          <div className="absolute  bottom-0 mr-[30px]  lg:w-1/2 lg:min-h-full lg:bottom-0  z-10 bg-[#1e1e1e]/40 backdrop-blur-sm  text-white gap-y-[32px] rounded-b-lg">
+            <div className="px-[24px]  lg:pt-[251px] lg:px-[107px] ">
+              <div className="lg:space-y-[20px] xl:space-y-[50px] 2xl:xl:space-y-[90px] min-w-full xl:max-w-[700px]">
+                <div className="">
+                  <h2 className="block xl:hidden text-2xl font-normal  pt-[28px] lg:pt-0 leading-7 font-cormorant  ">
+                    VENDA DE CABELO NATURAL
+                  </h2>
+                  <div className="">
+                    <h2 className="hidden xl:block text-xl 2xl:text-[32px] font-normal  leading-10 xl:-leading-1  font-cormorant  ">
+                      VENDA DE
+                    </h2>
+                    <h2 className="hidden xl:block text-2xl xl:text-[40px] 2xl:text-[64px] font-normal  leading-7   font-cormorant  ">
+                      CABELO NATURAL
+                    </h2>
+                  </div>
+                </div>
+                <p className=" mt-2 lg:mt-0 font-mulish  font-light  pb-[40px] sm:pb-[32px] lg:pb-[64px] leading-normal lg:leading-[24px]">
+                  Transforme o seu visual com extensões luxuosas e perucas
+                  feitas à medida e aplicadas no Paraíso das Princesa. Explore a
+                  nossa coleções, disponíveis em diversas texturas e cores para
+                  combinar com o seu estilo único
+                </p>
+              </div>
+              <div class="hidden  sm:mb-[53px] h-[72px] px-12 py-6 bg-[#a4775e] justify-center items-center gap-2 sm:inline-flex">
+                <div class="text-white text-2xl font-normal font-cormorant uppercase leading-[64px] tracking-wide">
+                  FAZER MARCAÇÃO
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Grid of services - visible on tablet and desktop */}
         <div className="">
-          <div className="hidden sm:block md:grid md:w-1/2 lg:w-1/3 grid-cols-2 gap-4 p-6">
-            {services.slice(1).map((service, index) => (
-              <div key={index} className="space-y-2">
-                <div className="relative aspect-square">
+          <div className="hidden  sm:grid grid-cols-1 lg:grid-cols-2  gap-4 lg:gap-x-4  p-6 sm:p-0 sm:py-[12px] sm:px-[30px]">
+            {services.map((service, index) => (
+              <div key={index} className=" sm:col-span-1 lg:col-auto   flex">
+                <div className="relative  w-full max-w-[340px] lg:max-w-[250px] ">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="rounded-lg"
+                    className="rounded-lg min-w-full max-w-[340px] lg:max-w-[250px] h-auto "
                   />
                 </div>
-                <h3 className="font-semibold">{service.title}</h3>
-                <p className="text-sm">{service.description}</p>
+                <div className="flex flex-col gap-y-[40px] p-[32px] bg-[#FAF3F2] ">
+                  <h3 className="text-[#84635C] font-cormorant text-[24px] lg:text-[12px] font-normal leading-[24px] lg:leading-none uppercase ">
+                    {service.title}
+                  </h3>
+                  <p className="text-4 lg:text-3 font-light leading-6 line-clamp-6 sm:line-clamp-0 lg:line-clamp-4">
+                    {service.description}
+                  </p>
+                </div>
               </div>
             ))}
+
+            {/* Discount offer in grid - only visible on lg and up */}
+            <div className="hidden lg:flex sm:col-span-1 lg:col-auto">
+              <div className="bg-[#b08d76] text-white w-full flex flex-col justify-center p-[32px]">
+                <div className="gap-y-[4px]">
+                  <h2 className="text-white text-[38px] font-light font-['Cormorant'] uppercase leading-loose tracking-widest">
+                    -15% DESCONTO
+                  </h2>
+                  <p className="text-[#ffd8d0] text-2xl font-light font-['Cormorant'] uppercase leading-loose">
+                    NA SUA PRIMEIRA VISITA
+                  </p>
+                </div>
+                <div className="h-16 justify-between items-center flex">
+                  <div className="text-white text-nowrap text-2xl font-normal font-cormorant uppercase leading-[64px] tracking-wide">
+                    FAZER MARCAÇÃO
+                  </div>
+                  <div className="w-10 h-10 px-3 py-4 origin-top-left border border-white/40 flex flex-col justify-center items-center gap-2">
+                    <img src={ForwardArrow} alt="" className="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="z-10 min-w-full   max-w-[360px] h-10 justify-between items-center inline-flex px-2 ">
+        <div class=" my-2 sm:my-0 min-w-full   max-w-[360px] h-10 justify-between items-center inline-flex sm:hidden px-2 ">
           <div class="w-10 h-10 px-3 py-4 origin-top-left  border border-[#ddc3ba]/40 flex flex-col justify-center items-center gap-2 ">
             <img src={LeftArrow} alt="" className="" />
           </div>
@@ -113,8 +161,8 @@ export default function OurServices() {
         </div>
 
         {/* Discount offer - always visible */}
-        <div className="bg-[#b08d76] text-white px-[24px] py-[32px] gap-y-[64px] ">
-          <div className="gap-y-[4px]">
+        <div className="bg-[#b08d76] text-white px-[24px] sm:px-0 sm:pl-[64px] sm:mx-[30px] py-[32px] gap-y-[64px] lg:hidden">
+          <div className="gap-y-[4px] ">
             <h2 className="text-white text-[38px] font-light font-['Cormorant'] uppercase leading-loose tracking-widest">
               -15% DESCONTO
             </h2>
@@ -122,8 +170,8 @@ export default function OurServices() {
               NA SUA PRIMEIRA VISITA
             </p>
           </div>
-          <div class="h-16 justify-between items-center flex">
-            <div class="text-white text-2xl font-normal font-cormorant uppercase leading-[64px] tracking-wide">
+          <div class="h-16 justify-between sm:justify-start sm:gap-x-[55%]  items-center flex">
+            <div class="text-white text-nowrap text-2xl font-normal font-cormorant uppercase leading-[64px] tracking-wide">
               FAZER MARCAÇÃO
             </div>
             <div class="w-10 h-10 px-3 py-4 origin-top-left  border border-white/40 flex flex-col justify-center items-center gap-2 ">

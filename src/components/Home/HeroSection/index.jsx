@@ -38,30 +38,38 @@ const HeroSection = () => {
 
   return (
     <>
-      
       <div className="relative min-w-full max-w-[1920px] h-auto overflow-hidden bg-cover font-mulish">
-        
         {/* Background Image  */}
-        <div className="block w-full h-screen bg-cover object-cover bg-hero-mobile md:bg-hero-tablet xl:bg-hero-desktop bg-no-repeat "></div>
+        {/* <div className="block w-full h-screen bg-cover object-cover bg-hero-mobile md:bg-hero-tablet xl:bg-hero-desktop bg-no-repeat "></div> */}
+        <div
+          className="block md:hidden w-full h-screen bg-cover object-cover  bg-no-repeat "
+          style={{ backgroundImage: `url('/MobileImg.png')` }}
+        ></div>
+        <div
+          className="hidden md:block customMd:block lg:hidden w-full h-screen bg-cover object-cover  bg-no-repeat "
+          style={{ backgroundImage: `url('/TabImg.png')` }}
+        ></div>
+        <div
+          className="hidden customMd:hidden lg:block w-full h-screen bg-cover object-cover  bg-no-repeat "
+          style={{ backgroundImage: `url('/HeroImage.png')` }}
+        ></div>
 
-        
-        <div className="absolute bottom-0 md:bottom-16 xl:bottom-[10%]  left-0 w-full customMd:mx-[24px] h-auto p-4 lg:pl-[250px]  lg:pt-[311px]">
+        <div className="absolute bottom-0 md:bottom-16 xl:bottom-[5%] 2xl:bottom-[10%]  left-0 w-full customMd:mx-[24px] h-auto p-4 lg:pl-[150px] xl:pl-[150px] 2xl:pl-[250px] iPadMini:pl-2  lg:pt-[311px]">
           <div className="font-cormorant text-white   p-6 md:p-0 customMd:w-[762px] lg:w-[816px]">
-            <h2 className="font-light   text-[52px]     customMd:text-[112px]  md:text-[104px] lg:text-[120px] 2xl:text-[120px] leading-[64px] md:leading-[110px] italic uppercase text-nowrap">
+            <h2 className="font-light   text-[52px]     customMd:text-[112px]  md:text-[104px] lg:text-[120px] xl:text-[90px] 2xl:text-[120px] leading-[64px] md:leading-[110px] italic uppercase text-nowrap">
               Cabelo Sedoso
             </h2>
-            <h3 className="font-normal text-[24px] md:text-[48px] xl:text-[48px] leading-[28px] md:leading-[52px] xl:leading-[46px] uppercase">
+            <h3 className="font-normal text-[24px] md:text-[48px] xl:text-[40px] xl:w-[634px] 2xl:w-auto 2xl:text-[48px] leading-[28px] md:leading-[52px] xl:leading-[46px] uppercase">
               Não acontece por acaso Acontece por marcação
             </h3>
           </div>
 
-          <div className="w-full px-auto md:py-[56px] xl:py-0 xl:pt-[64px] xl:pb-[50px]">
+          <div className="w-full px-auto md:py-[56px] xl:my-4 2xl:my-0 xl:pt-0 2xl:pt-[64px] xl:pb-0 2xl:pb-[50px]">
             <button className="w-full md:w-auto h-[72px] bg-[#A5775E] py-[24px] px-[48px] text-[20px] leading-[24px] text-white font-cormorant">
               FAZER MARCAÇÃO
             </button>
           </div>
 
-          
           <div className="max-w-full ">
             <div className="block sm:hidden pt-[48px] pb-[72px]">
               <CaroSlider SliderContent={SliderContent} />

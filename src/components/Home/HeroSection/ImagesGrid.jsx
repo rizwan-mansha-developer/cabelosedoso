@@ -4,7 +4,10 @@ function ImagesGrid({ SliderContent }) {
     <>
       <div className="hidden md:grid grid-cols-3 md:w-full lg:w-[726px] ">
         {SliderContent.slice(0, 3).map((item, index) => (
-          <div className="flex  justify-center items-center  text-white gap-x-[15px] ">
+          <div
+            key={item.id}
+            className="flex  justify-center items-center  text-white gap-x-[15px] "
+          >
             <img
               src={item.icon}
               alt={item.title}
