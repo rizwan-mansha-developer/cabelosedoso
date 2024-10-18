@@ -1,0 +1,13 @@
+/* Add to your main CSS file */
+.swiper-slide {
+  height: auto;
+}
+
+/* Optional: Add custom scrollbar styles */
+.swiper-scrollbar {
+  background: #eee;
+}
+
+.swiper-scrollbar-drag {
+  background: #666;
+}

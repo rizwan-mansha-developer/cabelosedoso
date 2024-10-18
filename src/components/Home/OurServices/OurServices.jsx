@@ -48,7 +48,7 @@ export default function OurServices() {
 
   return (
     <div className=" bg-white text-black min-h-screen ">
-      <h1 className="text-[#494040] text-[32px] font-semibold pt-[80px] text-center md:text-left border-l border-[#FAF6F2]">
+      <h1 className="font-cormorant leading-[40px] text-[#494040] text-[32px] font-normal mt-[80px] mb-[24px] sm:mx-[30px] pl-[16px] border-l-[#DDC3BB]   md:text-left border-l border-[#FAF6F2]">
         OUR SERVICES
       </h1>
 
@@ -67,15 +67,15 @@ export default function OurServices() {
             className="block sm:hidden relative rounded-lg min-h-[592px] w-full object-fill z-0"
           />
 
-          <div className="absolute  bottom-0 mr-[30px]  lg:w-1/2 lg:min-h-full lg:bottom-0  z-10 bg-[#1e1e1e]/40 backdrop-blur-sm  text-white gap-y-[32px] rounded-b-lg">
-            <div className="px-[24px]  lg:pt-[251px] lg:px-[107px] ">
+          <div className="absolute  bottom-0 sm:mr-[30px]  lg:w-1/2 lg:min-h-full lg:bottom-0  z-10 bg-[#1e1e1e]/40 backdrop-blur-sm  text-white gap-y-[32px] rounded-b-lg">
+            <div className="px-[24px]   lg:px-[107px] lg:pt-[150px] xl:pt-[251px]">
               <div className="lg:space-y-[20px] xl:space-y-[50px] 2xl:xl:space-y-[90px] min-w-full xl:max-w-[700px]">
                 <div className="">
                   <h2 className="block xl:hidden text-2xl font-normal  pt-[28px] lg:pt-0 leading-7 font-cormorant  ">
                     VENDA DE CABELO NATURAL
                   </h2>
                   <div className="">
-                    <h2 className="hidden xl:block text-xl 2xl:text-[32px] font-normal  leading-10 xl:-leading-1  font-cormorant  ">
+                    <h2 className="hidden xl:block text-xl 2xl:text-[32px] font-normal  leading-[3.3rem] xl:-leading-1  font-cormorant  ">
                       VENDA DE
                     </h2>
                     <h2 className="hidden xl:block text-2xl xl:text-[40px] 2xl:text-[64px] font-normal  leading-7   font-cormorant  ">
@@ -112,7 +112,7 @@ export default function OurServices() {
                   />
                 </div>
                 <div className="flex flex-col gap-y-[40px] p-[32px] bg-[#FAF3F2] ">
-                  <h3 className="text-[#84635C] font-cormorant text-[24px] lg:text-[12px] font-normal leading-[24px] lg:leading-none uppercase ">
+                  <h3 className="text-[#84635C] font-cormorant text-[24px] lg:text-[16px]  font-normal lg:font-semibold leading-[24px] lg:leading-none uppercase ">
                     {service.title}
                   </h3>
                   <p className="text-4 lg:text-3 font-light leading-6 line-clamp-6 sm:line-clamp-0 lg:line-clamp-4">

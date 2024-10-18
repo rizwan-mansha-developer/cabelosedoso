@@ -1,4 +1,5 @@
 import "./App.css";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import About from "./components/Home/About/About";
 import HeroSection from "./components/Home/HeroSection";
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <About />
       <OurServices />
+      <Gallery />
     </div>
   );
 }
