@@ -25,7 +25,7 @@ const Offers = () => {
 
       {/* Blur Section */}
       <div className="absolute w-full max-w-[1920px]  lg:left-1/2  bottom-0 lg:w-1/2 right-0  h-1/2 lg:h-full z-10 bg-[#1e1e1e]/40 backdrop-blur-sm text-white rounded-b-lg lg:rounded-none lg:rounded-l-lg">
-        <div className="flex flex-col justify-center items-center text-white px-[15px] lg:px-[50px] xl:px-[107px] lg:pt-[150px] xl:pt-[251px] space-y-[40px] w-full h-full">
+        <div className="flex flex-col justify-center items-center text-white px-[15px] lg:px-[50px] xl:px-[107px] lg:pt-[50px] xl:pt-[45px] 2xl:pt-[251px] space-y-[40px] w-full h-full">
           <div className="mt-[47px] text-center lg:space-y-[20px] xl:space-y-[50px] 2xl:space-y-[90px] w-full">
             <h2 className="uppercase text-white tracking-[0.05em] text-[40px] font-light leading-[1.2] font-cormorant">
               Oferecemos 15% de desconto
